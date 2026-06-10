@@ -1,5 +1,7 @@
 name: Deployment exercise
-on: push
+on:
+  push:
+    branches: [main, master, release/*]
 jobs:
   lint:
     runs-on: ubuntu-latest
